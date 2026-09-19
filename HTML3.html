@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>file:///C:/Users/Dell/Desktop/ABHISHEK/HTML3.html</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #87CEEB;
+            color: white;
+            text-align: center;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background:
+                linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)),
+                url("minecraft.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            text-shadow: 4px 4px 0px #222;
+        }
+
+        p {
+            font-size: 22px;
+            max-width: 650px;
+            line-height: 1.5;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 15px 35px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: #3b8526;
+            border: 3px solid #285b1a;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #1e4314;
+        }
+
+        button:hover {
+            background: #4da832;
+        }
+
+        button:active {
+            transform: translateY(5px);
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <h1>🎮 MINECRAFT</h1>
+
+        <p>
+            Welcome to the world of Minecraft!
+            Explore, build, craft and survive in an amazing
+            block-based world full of adventure.
+        </p>
+
+        <button onclick="openMinecraftPage()">
+            Explore Minecraft
+        </button>
+
+    </div>
+
+    <script>
+        function openMinecraftPage() {
+            window.open("Document1.html", "_blank");
+        }
+    </script>
+
+</body>
+</html>
